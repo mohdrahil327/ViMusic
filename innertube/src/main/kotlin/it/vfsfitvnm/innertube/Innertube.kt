@@ -95,7 +95,7 @@ object Innertube {
         val durationText: String?,
         override val thumbnail: Thumbnail?
     ) : Item() {
-        override val key get() = info!!.endpoint!!.videoId!!
+        override val key get() = info!!.endpoint!!.playlistSetVideoId ?: info!!.endpoint!!.videoId!!
 
         companion object
     }
@@ -107,7 +107,7 @@ object Innertube {
         val durationText: String?,
         override val thumbnail: Thumbnail?
     ) : Item() {
-        override val key get() = info!!.endpoint!!.videoId!!
+        override val key get() = info!!.endpoint!!.playlistSetVideoId ?: info!!.endpoint!!.videoId!!
 
         val isOfficialMusicVideo: Boolean
             get() = info
