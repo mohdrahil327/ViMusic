@@ -1,0 +1,7 @@
+# Android SDK location
+# Replace with your actual SDK path
+# Windows example:
+sdk.dir=C:\\Users\\raish\\AppData\\Local\\Android\\sdk
+
+# You can also set ANDROID_HOME environment variable instead:
+# set ANDROID_HOME=C:\Users\raish\AppData\Local\Android\sdk
